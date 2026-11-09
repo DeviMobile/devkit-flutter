@@ -1,8 +1,8 @@
 name: devimobile_devkit_lints
 description: Lint rule sets for Dart and Flutter with a documented decision for every SDK lint and a semver policy that keeps caret constraints safe.
 version: 0.1.0
-repository: https://github.com/DeviMobile/devkit/tree/main/packages/devimobile_devkit_lints
-issue_tracker: https://github.com/DeviMobile/devkit/issues
+repository: https://github.com/DeviMobile/devkit-flutter/tree/main/packages/devimobile_devkit_lints
+issue_tracker: https://github.com/DeviMobile/devkit-flutter/issues
 topics:
   - lints
   - analysis
