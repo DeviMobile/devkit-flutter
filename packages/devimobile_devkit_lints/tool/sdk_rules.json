@@ -1,6 +1,6 @@
 {
-  "sdk": "3.13.7",
-  "source": "https://raw.githubusercontent.com/dart-lang/sdk/3.13.7/pkg/linter/tool/machine/rules.json",
+  "sdk": "3.14.0",
+  "source": "https://raw.githubusercontent.com/dart-lang/sdk/3.14.0/pkg/linter/tool/machine/rules.json",
   "rules": [
     {
       "name": "always_declare_return_types",
@@ -667,7 +667,7 @@
       "sinceDartSdk": "2.9",
       "fixStatus": "hasFix",
       "incompatible": [],
-      "description": "Define case clauses for all constants in enum-like classes."
+      "description": "Define case clauses for all constants in enum-like types."
     },
     {
       "name": "file_names",
@@ -684,6 +684,14 @@
       "fixStatus": "hasFix",
       "incompatible": [],
       "description": "Use Flutter TODO format: // TODO(username): message, https://URL-to-issue."
+    },
+    {
+      "name": "future_sync_value",
+      "state": "stable",
+      "sinceDartSdk": "3.14",
+      "fixStatus": "hasFix",
+      "incompatible": [],
+      "description": "For synchronous values, `Future.syncValue` is more performant."
     },
     {
       "name": "hash_and_equals",
@@ -836,6 +844,14 @@
       "fixStatus": "needsFix",
       "incompatible": [],
       "description": "Use matching super parameter names."
+    },
+    {
+      "name": "migrate_design_widgets",
+      "state": "stable",
+      "sinceDartSdk": "3.13",
+      "fixStatus": "hasFix",
+      "incompatible": [],
+      "description": "Design widgets should be imported from Material or Cupertino packages."
     },
     {
       "name": "missing_code_block_language_in_doc_comment",
@@ -1518,7 +1534,7 @@
       "name": "sort_pub_dependencies",
       "state": "stable",
       "sinceDartSdk": "2.1",
-      "fixStatus": "needsFix",
+      "fixStatus": "hasFix",
       "incompatible": [],
       "description": "Sort pub dependencies alphabetically."
     },
@@ -1648,7 +1664,7 @@
     },
     {
       "name": "unnecessary_await_in_return",
-      "state": "stable",
+      "state": "deprecated",
       "sinceDartSdk": "2.1",
       "fixStatus": "hasFix",
       "incompatible": [],
@@ -1867,6 +1883,14 @@
       "description": "Don't access members with `this` unless avoiding shadowing."
     },
     {
+      "name": "unnecessary_this_alias",
+      "state": "experimental",
+      "sinceDartSdk": "3.14",
+      "fixStatus": "hasFix",
+      "incompatible": [],
+      "description": "Use 'this' directly instead of assigning it to a local variable."
+    },
+    {
       "name": "unnecessary_to_list_in_spreads",
       "state": "stable",
       "sinceDartSdk": "2.18",
@@ -2033,14 +2057,6 @@
       "fixStatus": "hasFix",
       "incompatible": [],
       "description": "If-elements testing for null can be replaced with null-aware elements."
-    },
-    {
-      "name": "use_primary_constructors",
-      "state": "experimental",
-      "sinceDartSdk": "3.13",
-      "fixStatus": "hasFix",
-      "incompatible": [],
-      "description": "Use a primary constructor."
     },
     {
       "name": "use_raw_strings",
