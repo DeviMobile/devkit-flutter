@@ -73,7 +73,7 @@ are skipped.
    the organization variable `BOT_APP_CLIENT_ID` (the App's client ID) and the
    secret `BOT_APP_KEY` (its private key).
 5. **pub.dev automated publishing**, for each package (Admin tab):
-   repository `DeviMobile/devkit`, tag pattern `<package>-v{{version}}`,
+   repository `DeviMobile/devkit-flutter`, tag pattern `<package>-v{{version}}`,
    require GitHub Actions environment `pub.dev`.
 6. **GitHub environment** `pub.dev` with required reviewers and deployments
    limited to tags `devimobile_devkit_*-v*`.
